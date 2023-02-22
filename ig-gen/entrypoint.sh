@@ -2,6 +2,7 @@
 
 ./_updatePublisher.sh -y
 chmod a+x _genonce.sh
+sed -i 's/bash/sh/g' _genonce.sh
 
 java -jar plantuml.jar -tsvg -o /usr/share/ig/content/input/images /usr/share/ig/content/input/images-source
 
